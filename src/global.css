@@ -1,0 +1,52 @@
+@import "tailwindcss";
+:root {
+  background-color: #29292E;
+}
+body {
+  @apply font-sans;
+}
+
+@utility title-lg {
+  font-size: var(--title-lg);
+  line-height: var(--line-primary);
+}
+
+@utility title-md {
+  font-size: var(--title-md);
+  line-height: var(--line-primary);
+}
+
+@utility title-sm {
+  font-size: var(--title-sm);
+  line-height: var(--line-secondary);
+
+}
+
+@theme {
+  --font-sans: "Catamaran", sans-serif;
+
+  --title-lg: 2rem;
+  --title-md: 1rem;
+  --title-sm: 0.875rem;
+
+  --text-Md: 1rem;
+  --text-Sm: 0.875rem;
+
+  --line-primary: 1.5rem;
+  --line-secondary: 1.25rem;
+
+  --color-yellow: #B8952E;
+  --color-yellow-light: #DBC170;
+  --color-yellow-dark: #846F2E;
+
+  --color-gray-100: #F5F4F5;
+  --color-gray-200: #B2AFB6;
+  --color-gray-300: #98959D;
+  --color-gray-400: #7A767F;
+  --color-gray-500: #3E3C41;
+  --color-gray-600: #2E2C30;
+  --color-gray-700: #232225;
+  --color-gray-800: #19181B;
+  --color-gray-900: #050505;
+}
+
