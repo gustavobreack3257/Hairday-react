@@ -1,9 +1,16 @@
 @import "tailwindcss";
-:root {
-  background-color: #29292E;
+
+* {
+  box-sizing: border-box;
 }
+
+:root {
+  background-color: var(--color-gray-900);
+}
+
 body {
   @apply font-sans;
+  overflow-x: hidden;
 }
 
 @utility title-lg {
@@ -19,13 +26,12 @@ body {
 @utility title-sm {
   font-size: var(--title-sm);
   line-height: var(--line-secondary);
-
 }
 
 @theme {
   --font-sans: "Catamaran", sans-serif;
 
-  --title-lg: 2rem;
+  --title-lg: 1.5rem;
   --title-md: 1rem;
   --title-sm: 0.875rem;
 
@@ -35,18 +41,17 @@ body {
   --line-primary: 1.5rem;
   --line-secondary: 1.25rem;
 
-  --color-yellow: #B8952E;
-  --color-yellow-light: #DBC170;
-  --color-yellow-dark: #846F2E;
+  --color-yellow: #b8952e;
+  --color-yellow-light: #dbc170;
+  --color-yellow-dark: #846f2e;
 
-  --color-gray-100: #F5F4F5;
-  --color-gray-200: #B2AFB6;
-  --color-gray-300: #98959D;
-  --color-gray-400: #7A767F;
-  --color-gray-500: #3E3C41;
-  --color-gray-600: #2E2C30;
+  --color-gray-100: #f5f4f5;
+  --color-gray-200: #b2afb6;
+  --color-gray-300: #98959d;
+  --color-gray-400: #7a767f;
+  --color-gray-500: #3e3c41;
+  --color-gray-600: #2e2c30;
   --color-gray-700: #232225;
-  --color-gray-800: #19181B;
+  --color-gray-800: #19181b;
   --color-gray-900: #050505;
 }
-

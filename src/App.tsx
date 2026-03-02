@@ -1,13 +1,11 @@
 import "./global.css";
+import { Layout } from "./layout";
+import { Home } from "./page/home";
 
 export function App() {
   return (
-    <>
-      <div className="title-lg font-bold">Ola app</div>
-      <div className="title-md font-bold">Ola app</div>
-      <div className="title-sm font-bold">Ola app</div>
-      <div className="text-Md font-normal">Ola app</div>
-      <div className="text-Sm font-normal">Ola app</div>
-    </>
+    <Layout>
+      <Home />
+    </Layout>
   );
 }
