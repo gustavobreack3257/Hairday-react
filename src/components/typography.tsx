@@ -7,8 +7,9 @@ const typographyVariants = tv({
     variant: {
       "header-title": "title-lg font-bold",
       "header-description": "text-Sm text-gray-300 font-normal",
-      "section-title": "",
-      "section-description": "",
+      "label-title": "title-md text-gray-200 font-bold",
+      "label-description": "text-Sm text-gray-300 font-normal",
+      "data-text": "text-Md font-normal text-gray-200",
     },
   },
   defaultVariants: {

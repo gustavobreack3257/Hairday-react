@@ -1,7 +1,12 @@
+import { DropdownSelect } from "./dropdown-select/dropdown-select";
 export function AppointmentForm() {
   return (
-    <div className="bg-red-500">
-      <form>jhdskshbkdajbhdskaj</form>
+    <div>
+      <form>
+        <div className="flex">
+          <DropdownSelect labelTitle="Data" icon />
+        </div>
+      </form>
     </div>
   );
 }
