@@ -13,18 +13,16 @@ const buttonVariants = tv({
       small: "max-w-xs",
       normal: "w-full",
     },
-    icon: {
-      calendar: "",
-      client: "",
-    },
   },
   defaultVariants: {
     size: "normal",
-    icon: "calendar",
   },
 });
+
+type IconType = "calendar" | "client";
 type DropdownSelectProps = {
   label: string;
+  icon: IconType;
   caretIcon?: boolean;
   date?: string;
 } & VariantProps<typeof buttonVariants>;
@@ -37,16 +35,13 @@ export function DropdownSelect({
   ...props
 }: DropdownSelectProps) {
   const iconStyle = "text-yellow h-4 w-4";
+
   return (
     <div className="flex flex-col gap-2">
       <Typography as="label" variant="label-title">
         {label}
       </Typography>
-      <button
-        type="button"
-        className={buttonVariants({ size, icon })}
-        {...props}
-      >
+      <button type="button" className={buttonVariants({ size })} {...props}>
         <div className="flex items-center gap-2">
           {icon === "calendar" && <CalendarBlankIcon className={iconStyle} />}
           {icon === "client" && <UserSquareIcon className={iconStyle} />}

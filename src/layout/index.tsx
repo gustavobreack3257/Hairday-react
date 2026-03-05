@@ -5,7 +5,7 @@ type LayoutProps = {
 };
 export function Layout({ children }: LayoutProps) {
   return (
-    <div className="flex flex-col h-screen bg-amber-300">
+    <div className="flex flex-col h-screen">
       <header className="absolute w-full">
         <img src={LogoApp} alt="logo da aplicação" className="block" />
       </header>

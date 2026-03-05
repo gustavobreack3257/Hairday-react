@@ -26,7 +26,7 @@ interface TypographyProps extends VariantProps<typeof typographyVariants> {
 export function Typography({
   as: Component = "h1",
   className,
-  children,
+  //children,
   variant,
   ...props
 }: TypographyProps) {
@@ -34,8 +34,6 @@ export function Typography({
     <Component
       className={typographyVariants({ variant, className })}
       {...props}
-    >
-      {children}
-    </Component>
+    />
   );
 }
