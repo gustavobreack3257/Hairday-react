@@ -3,7 +3,7 @@ import { HeaderApp } from "../components/header-app";
 
 export function Home() {
   return (
-    <div className="grid grid-cols-[1fr_2fr] h-full bg-blue-600">
+    <div className="grid grid-cols-[1fr_2fr] h-full">
       <article className="flex flex-col h-full p-20 gap-6 bg-gray-700">
         <HeaderApp
           title="Agende um atendimento"
@@ -12,6 +12,7 @@ export function Home() {
         />
         <AppointmentForm />
       </article>
+
       <div className="flex flex-col bg-amber-600"></div>
     </div>
   );
